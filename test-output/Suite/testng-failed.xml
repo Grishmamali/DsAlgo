@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.testcases.dsalgo.LinkedListTest">
+        <methods>
+          <include name="setup"/>
+          <include name="linkedlistTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testcases.dsalgo.LinkedListTest -->
       <class name="com.testcases.dsalgo.LoginTestDDT">
         <methods>
           <include name="setup"/>
-          <include name="loginDDT" invocation-numbers="1"/>
+          <include name="loginDDT"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.testcases.dsalgo.LoginTestDDT -->
+      <class name="com.testcases.dsalgo.ArrayTest">
+        <methods>
+          <include name="setup"/>
+          <include name="arrayTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testcases.dsalgo.ArrayTest -->
+      <class name="com.testcases.dsalgo.StackTest">
+        <methods>
+          <include name="Stack_Test"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testcases.dsalgo.StackTest -->
+      <class name="com.testcases.dsalgo.GraphTest">
+        <methods>
+          <include name="setup"/>
+          <include name="graph"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testcases.dsalgo.GraphTest -->
+      <class name="com.testcases.dsalgo.LoginTest">
+        <methods>
+          <include name="Login"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testcases.dsalgo.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
